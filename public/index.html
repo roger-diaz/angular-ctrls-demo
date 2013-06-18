@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angular PoC - Ctrls</title>
+	</head>
+	<body ng-app>
+		<div ng-controller="CStudioFormController">
+			<div ng-repeat="field in fields" id="{{field.id}}" >
+				<div {{field.type}}={}></div>
+			</div>
+		</div>
+		
+		<script src="lib/angular.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
